@@ -9,7 +9,10 @@ html {
 }
 
 .page {
-  inline-size: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  inline-size: 1200px; /*ширина*/
   block-size: 100%;
   margin: auto;
   color: #fff;
@@ -48,4 +51,41 @@ ol {
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
   background-color: #D9D9D9;
+}
+
+.content,
+.result,
+.content__details {
+  display: flex;
+}
+
+.content {
+  margin-top: 133px;
+  flex-direction: row;
+  align-items: end;
+  width: 1140px;
+  height: 534px;
+  margin: 130px 30px;
+  gap: 30px;
+}
+
+.result,
+.content__details {
+  flex-direction: column;
+}
+
+
+.search-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.content__list-container {
+  height: 298px;
+  overflow: scroll;
+}
+
+.content__details {
+  gap: 26px;
 }
