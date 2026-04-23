@@ -13,7 +13,7 @@ html {
   justify-content: center;
   align-items: center;
   inline-size: 1200px; /*ширина*/
-  block-size: 100%;
+  block-size: 800px;
   margin: auto;
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
@@ -60,12 +60,10 @@ ol {
 }
 
 .content {
-  margin-top: 133px;
   flex-direction: row;
   align-items: end;
   width: 1140px;
   height: 534px;
-  margin: 130px 30px;
   gap: 30px;
 }
 
@@ -74,6 +72,17 @@ ol {
   flex-direction: column;
 }
 
+.result__video-container {
+  margin-bottom: 10px;
+  width: 711px;
+  height: 386px;
+}
+
+.result__video {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+}
 
 .search-form {
   display: flex;
@@ -81,11 +90,38 @@ ol {
   align-items: start;
 }
 
+.content__details {
+  gap: 26px;
+  width: 399px;
+}
+
 .content__list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
   height: 298px;
   overflow: scroll;
 }
 
-.content__details {
-  gap: 26px;
+.content__list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.content__video-card {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+}
+
+.content__video-card-description-container {
+  flex-grow: 2;
+}
+
+.content__video-card-thumbnail {
+  min-width: 194px;
+  height: 103px;
+  object-fit: cover;
+  object-position: center center;
 }
