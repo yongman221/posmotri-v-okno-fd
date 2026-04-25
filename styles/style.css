@@ -4,7 +4,8 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   block-size: 100%;
 }
 
@@ -12,7 +13,7 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 1200px; 
+  min-width: 1200px;
   min-height: 800px;
   margin: auto;
   color: #fff;
@@ -146,7 +147,7 @@ ol {
 
 .search-form__textfield::placeholder {
   color: rgb(255 255 255 / 0.7);
-  
+
 }
 
 .search-form__textfield:focus-visible {
@@ -188,11 +189,11 @@ ol {
   opacity: 0;
 }
 
-.search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
-    opacity: 1;
+.search-form__checkbox:checked+.search-form__pseudo-checkbox::after {
+  opacity: 1;
 }
 
-.search-form__label:hover > .search-form__label-text {
+.search-form__label:hover>.search-form__label-text {
   text-decoration: underline;
   text-underline-offset: 3px;
 }
@@ -224,7 +225,7 @@ ol {
 }
 
 .more-button {
-  height: 34px; 
+  height: 34px;
   flex-shrink: 0;
   margin-bottom: 2px;
   margin-right: 3px;
