@@ -255,6 +255,7 @@ ol {
   gap: 30px;
   min-height: 0px;
   overflow: scroll;
+  overflow-y: scroll;
   overflow-x: hidden;
 }
 
