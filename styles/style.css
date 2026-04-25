@@ -12,8 +12,9 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
-  inline-size: 1200px; /*ширина*/
-  block-size: 800px;
+  min-width: 1200px; 
+  min-height: 800px;
+  margin: auto;
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
@@ -255,6 +256,7 @@ ol {
   flex-direction: column;
   gap: 30px;
   min-height: 0px;
+  overflow: scroll;
   overflow-y: scroll;
   overflow-x: hidden;
 }
