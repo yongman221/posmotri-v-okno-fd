@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-html {
+html, body {
   block-size: 100%;
 }
 
@@ -14,11 +14,11 @@ html {
   align-items: center;
   inline-size: 1200px; /*ширина*/
   block-size: 800px;
-  margin: auto;
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
+  overflow: hidden;
 }
 
 h1,
@@ -75,6 +75,7 @@ ol {
 }
 
 .content {
+  min-height: 0;
   flex-direction: row;
   align-items: end;
   width: 1140px;
@@ -254,7 +255,6 @@ ol {
   flex-direction: column;
   gap: 30px;
   min-height: 0px;
-  overflow: scroll;
   overflow-y: scroll;
   overflow-x: hidden;
 }
