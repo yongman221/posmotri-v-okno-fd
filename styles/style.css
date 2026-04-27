@@ -14,7 +14,6 @@ body {
   justify-content: center;
   align-items: center;
   min-width: 1200px;
-  min-height: 800px;
   margin: auto;
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
@@ -81,7 +80,6 @@ ol {
   flex-direction: row;
   align-items: end;
   width: 1140px;
-  height: 534px;
   gap: 32px;
 }
 
@@ -256,10 +254,9 @@ ol {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  min-height: 0px;
+  height: 298px;
   overflow: scroll;
-  overflow-y: scroll;
-  overflow-x: hidden;
+  ;
 }
 
 .content__list {
