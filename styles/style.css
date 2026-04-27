@@ -19,7 +19,6 @@ body {
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
-  overflow: hidden;
 }
 
 h1,
@@ -76,7 +75,6 @@ ol {
 }
 
 .content {
-  min-height: 0;
   flex-direction: row;
   align-items: end;
   width: 1140px;
@@ -99,6 +97,7 @@ ol {
   width: inherit;
   height: inherit;
   object-fit: cover;
+  object-position: center;
 }
 
 .search-form {
@@ -256,7 +255,6 @@ ol {
   gap: 30px;
   height: 298px;
   overflow: scroll;
-  ;
 }
 
 .content__list {
@@ -313,7 +311,14 @@ ol {
 .content__video-card-description {
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
-  line-clamp: 2;
+  line-height: 100%;
+  max-height: 72px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
 }
 
 .content__video-card-thumbnail {
